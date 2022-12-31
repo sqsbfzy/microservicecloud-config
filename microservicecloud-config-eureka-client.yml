@@ -2,7 +2,9 @@ spring:
   profiles: 
   active: 
     - dev
+
 ---
+
 server: 
   port: 7001 #注册中心占用7001端口,冒号后面必须要有空格
   
@@ -19,9 +21,12 @@ eureka:
     fetch-registry: false #不通过eureka获取注册信息
     service-url: 
       defaultZone: http://eureka7001.com:7001/eureka/
+
 ---
+
 server: 
   port: 7001 #注册中心占用7001端口, 冒号后面必须要有空格
+
 spring: 
   profiles: test
   application:
@@ -36,5 +41,4 @@ eureka:
     service-url: 
       defaultZone: http://eureka7001.com:7001/eureka/
 
-  
   
