@@ -1,9 +1,9 @@
 spring: 
-  profiles:
-  active:
+  profiles: 
+  active: 
     - dev
 
---- 
+---
 
 server: 
   port: 8001	 #部门提供者占用8001端口,冒号后面必须要有空格
